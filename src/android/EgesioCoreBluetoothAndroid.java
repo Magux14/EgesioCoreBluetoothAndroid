@@ -1,4 +1,4 @@
-package cordova-plugin-egesio-core-bluetooth-android;
+package cordova.plugin.egesio.core.bluetooth.android;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
