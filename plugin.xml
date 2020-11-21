@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-egesio-core-bluetooth-android" version="1.0.0">
+   <name>EgesioCoreBluetoothAndroid</name>
+   <js-module name="EgesioCoreBluetoothAndroid" src="www/EgesioCoreBluetoothAndroid.js">
+      <clobbers target="cordova.plugins.EgesioCoreBluetoothAndroid" />
+   </js-module>
+   <platform name="android">
+      <config-file parent="/*" target="res/xml/config.xml">
+         <feature name="EgesioCoreBluetoothAndroid">
+            <param name="android-package" value="cordova.plugin.egesio.core.bluetooth.android.EgesioCoreBluetoothAndroid" />
+         </feature>
+      </config-file>
+      <config-file parent="/*" target="AndroidManifest.xml" />
+      <source-file src="src/android/EgesioCoreBluetoothAndroid.java" target-dir="src/cordova/plugin/egesio/core/bluetooth/android/EgesioCoreBluetoothAndroid" />
+   </platform>
+</plugin>
