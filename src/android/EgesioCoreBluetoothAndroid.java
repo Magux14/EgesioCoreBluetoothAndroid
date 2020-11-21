@@ -26,7 +26,7 @@ public class EgesioCoreBluetoothAndroid extends CordovaPlugin {
 
     private void startMainProcess(String message, CallbackContext callbackContext) {
         if (message != null && message.length() > 0) {
-            callbackContext.success(message);
+            callbackContext.success(message + " Respuesta desde nativo!!");
         } else {
             callbackContext.error("Expected one non-empty string argument.");
         }
@@ -55,4 +55,21 @@ public class EgesioCoreBluetoothAndroid extends CordovaPlugin {
             callbackContext.error("Expected one non-empty string argument.");
         }
     }
+
+     private void startContactTracing(String message, CallbackContext callbackContext) {
+        if (message != null && message.length() > 0) {
+            callbackContext.success(message);
+        } else {
+            callbackContext.error("Expected one non-empty string argument.");
+        }
+    }
+
+     private void stopContactTracing(String message, CallbackContext callbackContext) {
+        if (message != null && message.length() > 0) {
+            callbackContext.success(message);
+        } else {
+            callbackContext.error("Expected one non-empty string argument.");
+        }
+    }
+
 }
